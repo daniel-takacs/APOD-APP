@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import Form from './Form'
 
 function App() {
   return (
     <div className="App">
-     <Form />
+      <h1>Astronomy Picture of the Day</h1>
+      <Form />
     </div>
   );
 }
