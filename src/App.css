@@ -5,7 +5,10 @@
   align-items: center;
   padding: 0 10px;
   color: white;
-  
+}
+.date-input {
+  display: flex;
+  justify-content: center;
 }
 .pic-items {
   display: flex;
@@ -21,9 +24,8 @@ img, .explanation {
 
 .explanation {
   text-align: justify;
-  color: gray;
+  color: white;
 }
-
 .iframe-container {
   position: relative;
   width: 100%;
@@ -52,10 +54,13 @@ img, .explanation {
 @media screen and (min-width: 1444px) {
   .content-container {
     display: flex;
-    width: 90vw;
+    width: 1200px;
+    align-items: center;
   }
-  .video {
-    width: 70%;
-    height: 70%;
+  .iframe-container{
+    margin-right: 20px;
+  }
+  .explanation {
+    font-size: 18px;
   }
 }

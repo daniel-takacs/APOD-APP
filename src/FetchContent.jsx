@@ -9,9 +9,15 @@ function FetchContent() {
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
     const [items, setItems] = useState([])
+    const [date, setDate] = useState("2021-03-15")
    
+    const dateHandle = (e)=> {
+        setDate(e.target.value)
+    }
+    console.log(date)
+
     useEffect(() =>{
-        fetch(`https://api.nasa.gov/planetary/apod?api_key=${ApiKey}`)
+        fetch(`https://api.nasa.gov/planetary/apod?api_key=${ApiKey}&date=${date}`)
             .then(response => response.json())
             .then((result) => {
                     setIsLoaded(true)
@@ -30,6 +36,9 @@ function FetchContent() {
         }else {
             return (
                 <div className="form">
+                    <div className="date-input">
+                        <input type="date" onChange={dateHandle}/>
+                    </div>
                     <PictureItems items={items}/>     
                </div>
             )

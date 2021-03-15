@@ -5,8 +5,8 @@ function PictureItems({ items }) {
    
     return (
         <div className="pic-items">
-            <div className="date">{items.date}</div>
-            <div className="title">{items.title}</div>
+           
+            
             <div className="content-container">
             {items.media_type === "video" ? (
                 <div className="iframe-container">
@@ -17,10 +17,13 @@ function PictureItems({ items }) {
                     allowFullScreen/> 
                 </div>    
                 ) : (
-                <img src={items.hdurl} alt="photo" className="image"/>
+                <img src={items.url} alt="photo" className="video"/>
                 ) 
             }
-            <div className="explanation">{items.explanation}</div>
+                <div className="desc-container">
+                    <h2 className="title">{items.title}</h2>
+                    <div className="explanation">{items.explanation}</div>
+                </div>
             </div>
         </div>
     )
