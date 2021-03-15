@@ -9,7 +9,7 @@ function FetchContent() {
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
     const [items, setItems] = useState([])
-    const [date, setDate] = useState("2021-03-15")
+    const [date, setDate] = useState("")
    
     const dateHandle = (e)=> {
         setDate(e.target.value)
@@ -28,7 +28,7 @@ function FetchContent() {
                     setError(error)
             }
             )
-        }, [])
+        }, [date])
         if (error) {
             return <div>Error: {error.message}</div>
         }else if (!isLoaded) {

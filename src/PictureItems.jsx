@@ -10,14 +10,16 @@ function PictureItems({ items }) {
             <div className="content-container">
             {items.media_type === "video" ? (
                 <div className="iframe-container">
-                <iframe 
-                    className="video" src={items.url} title="picture-of-the-day"
-                    frameBorder="0"
-                    allow="encrypted-media"
-                    allowFullScreen/> 
+                    <iframe 
+                        className="video" src={items.url} title="picture-of-the-day"
+                        frameBorder="0"
+                        allow="encrypted-media"
+                        allowFullScreen/> 
                 </div>    
                 ) : (
-                <img src={items.url} alt="photo" className="video"/>
+                <div className="image-container">
+                    <img src={items.url} alt="photo" className="image"/>
+                </div>
                 ) 
             }
                 <div className="desc-container">
