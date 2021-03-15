@@ -1,11 +1,11 @@
 import './App.css';
-import Form from './Form'
+import FetchContent from './FetchContent';
 
 function App() {
   return (
     <div className="App">
       <h1>Astronomy Picture of the Day</h1>
-      <Form />
+      <FetchContent />
     </div>
   );
 }
