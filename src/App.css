@@ -8,18 +8,26 @@
   
 }
 h1 {
-  color:#DEB841
+  margin-top: 45px;
+  color:#DEB841;
+  text-align: center;
+}
+p {
+  letter-spacing: 1px;
 }
 .date-input {
   display: flex;
   justify-content: center;
+}
+#date {
+  margin-left: 10px;
 }
 .pic-items {
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  
+  margin: 20px 0 20px 0;
 }
 img, .explanation {
   max-width: 100%;
@@ -28,7 +36,7 @@ img, .explanation {
 
 .explanation {
   text-align: justify;
-  color: white;
+  color: rgba(255,255,255,0.6)
 }
 .iframe-container {
   position: relative;
@@ -58,7 +66,7 @@ img, .explanation {
 @media screen and (min-width: 1444px) {
   .content-container {
     display: flex;
-    width: 1200px;
+    width: 1400px;
     align-items: center;
   }
   .desc-container{
@@ -67,10 +75,10 @@ img, .explanation {
   .explanation {
     font-size: 19px;
   }
-  .App {
-    height: 100vh;
-  }
   .form {
     margin-top: 50px;
+  }
+  .pic-items {
+    margin: 50px 0 80px 0;
   }
 }

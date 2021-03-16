@@ -38,7 +38,8 @@ function FetchContent() {
             return (
                 <div className="form">
                     <div className="date-input">
-                        <input type="date" value={items.date} onChange={dateHandle}/>
+                        <label>Select a date</label>
+                        <input type="date" id="date" value={items.date} onChange={dateHandle}/>
                     </div>
                     <PictureItems items={items}/>     
                </div>

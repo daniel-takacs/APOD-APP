@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url(./84303.jpg) no-repeat fixed;
-  backdrop-filter: grayscale(0.5) opacity(0.4)
+  backdrop-filter: grayscale(0.5) opacity(0.4);
+  font-family: 'Orbitron', sans-serif;
 }
 
 code {

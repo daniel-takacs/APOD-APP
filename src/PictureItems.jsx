@@ -24,7 +24,7 @@ function PictureItems({ items }) {
             }
                 <div className="desc-container">
                     <h2 className="title">{items.title}</h2>
-                    <div className="explanation">{items.explanation}</div>
+                    <p className="explanation">{items.explanation}</p>
                 </div>
             </div>
         </div>
