@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import nasaLogo from './nasa-logo.jpg'
+import nasaLogo from './tenor.gif'
 import PictureItems from './PictureItems'
 import './App.css'
 
 const ApiKey = "yF5XishREd40vysqeqpv3njo49QDSapRjqDXbQp2"
 
 function FetchContent() {
+
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
     const [items, setItems] = useState([])
@@ -37,7 +38,7 @@ function FetchContent() {
             return (
                 <div className="form">
                     <div className="date-input">
-                        <input type="date" onChange={dateHandle}/>
+                        <input type="date" value={items.date} onChange={dateHandle}/>
                     </div>
                     <PictureItems items={items}/>     
                </div>

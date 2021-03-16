@@ -5,6 +5,10 @@
   align-items: center;
   padding: 0 10px;
   color: white;
+  
+}
+h1 {
+  color:#DEB841
 }
 .date-input {
   display: flex;
@@ -61,6 +65,12 @@ img, .explanation {
     margin-left: 20px;
   }
   .explanation {
-    font-size: 18px;
+    font-size: 19px;
+  }
+  .App {
+    height: 100vh;
+  }
+  .form {
+    margin-top: 50px;
   }
 }

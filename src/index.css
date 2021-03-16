@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./84303.jpg) no-repeat center center fixed;
+  background: url(./84303.jpg) no-repeat fixed;
   backdrop-filter: grayscale(0.5) opacity(0.4)
 }
 
