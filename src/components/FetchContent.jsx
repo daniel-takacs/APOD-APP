@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import nasaLogo from './tenor.gif'
+import nasaLogo from '../assets/images/tenor.gif'
 import PictureItems from './PictureItems'
-import './App.css'
+import '../App.css'
+import '../index.css'
 
 const ApiKey = "yF5XishREd40vysqeqpv3njo49QDSapRjqDXbQp2"
 
@@ -33,10 +34,11 @@ function FetchContent() {
         if (error) {
             return <div>Error: {error.message}</div>
         }else if (!isLoaded) {
-            return <img src={nasaLogo} alt="nasa-logo"/>
+            return <div className="loading-logo" ><img src={nasaLogo} alt="nasa-logo"/></div>
         }else {
             return (
                 <div className="form">
+                    <h1>Astronomy Picture of the Day</h1>
                     <div className="date-input">
                         <label>Select a date</label>
                         <input type="date" id="date" value={items.date} onChange={dateHandle}/>

@@ -1,10 +1,10 @@
 import './App.css';
-import FetchContent from './FetchContent';
+import FetchContent from './components/FetchContent';
 
 function App() {
   return (
     <div className="App">
-      <h1>Astronomy Picture of the Day</h1>
+      
       <FetchContent />
     </div>
   );
