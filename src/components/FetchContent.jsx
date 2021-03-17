@@ -16,7 +16,6 @@ function FetchContent() {
     const dateHandle = (e)=> {
         setDate(e.target.value)
     }
-    console.log(date)
 
     useEffect(() =>{
         fetch(`https://api.nasa.gov/planetary/apod?api_key=${ApiKey}&date=${date}`)
@@ -41,7 +40,7 @@ function FetchContent() {
                     <h1>Astronomy Picture of the Day</h1>
                     <div className="date-input">
                         <label>Select a date</label>
-                        <input type="date" id="date" value={items.date} onChange={dateHandle}/>
+                        <input type="date" id="date" onChange={dateHandle}/>
                     </div>
                     <PictureItems items={items}/>     
                </div>

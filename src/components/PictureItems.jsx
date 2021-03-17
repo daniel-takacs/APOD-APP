@@ -18,7 +18,7 @@ function PictureItems({ items }) {
                 </div>    
                 ) : (
                 <div className="image-container">
-                    <img src={items.url} alt="photo" className="image"/>
+                    <img src={items.url} alt="astronomy pic of the day" className="image"/>
                 </div>
                 ) 
             }
