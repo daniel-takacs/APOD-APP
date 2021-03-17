@@ -4,7 +4,7 @@ import PictureItems from './PictureItems'
 import '../App.css'
 import '../index.css'
 
-const ApiKey = "yF5XishREd40vysqeqpv3njo49QDSapRjqDXbQp2"
+const ApiKey = process.env.REACT_APP_API_KEY
 
 function FetchContent() {
 
