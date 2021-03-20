@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import nasaLogo from '../assets/images/tenor.gif'
 import PictureItems from './PictureItems'
 import '../App.css'
-import '../index.css'
+
 
 const ApiKey = process.env.REACT_APP_API_KEY
 
