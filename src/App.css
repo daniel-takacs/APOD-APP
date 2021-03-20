@@ -58,8 +58,19 @@ img, .explanation {
 
 
 @media screen and (min-width: 1024px) {
+  .form {
+    position: relative;
+  }
   img, .explanation {
     max-width: 800px;
+    
+  }
+  h1 {
+    margin: 0;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -325px;
+    top: 450px; 
   }
 }
 
@@ -78,8 +89,10 @@ img, .explanation {
   }
   .form {
     margin-top: 50px;
+    position: relative;
   }
   .pic-items {
     margin: 50px 0 80px 0;
   }
+ 
 }

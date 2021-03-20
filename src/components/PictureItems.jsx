@@ -24,6 +24,7 @@ function PictureItems({ items }) {
             }
                 <div className="desc-container">
                     <h2 className="title">{items.title}</h2>
+                    <span>{items.date}</span>
                     <p className="explanation">{items.explanation}</p>
                 </div>
             </div>
