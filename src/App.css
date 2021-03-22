@@ -36,7 +36,6 @@ h1 {
 p {
   letter-spacing: 1px;
 }
-
 .date-input {
   display: flex;
   justify-content: center;
@@ -55,7 +54,6 @@ img, .explanation {
   max-width: 100%;
   margin: 20px 0;
 }
-
 .explanation {
   text-align: justify;
   color: rgba(255,255,255,0.6)
@@ -65,7 +63,6 @@ img, .explanation {
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%;
-
 }
 .video {
   position: absolute;
@@ -87,6 +84,9 @@ img, .explanation {
     position: absolute;
     top: 50%;
     left: -130px;
+  }
+  .date-input {
+    margin-top: 20px;
   }
 }
 
