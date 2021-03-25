@@ -2,11 +2,14 @@ import React, {useState, useEffect} from 'react'
 import nasaLogo from '../assets/images/tenor.gif'
 import PictureItems from './PictureItems'
 import '../App.css'
+import DarkModeToggle from 'react-dark-mode-toggle'
 
 
 const ApiKey = process.env.REACT_APP_API_KEY
 
 function FetchContent() {
+
+    const [isDarkMode, setIsDarkMode] = useState(()=> true)
 
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
@@ -36,14 +39,19 @@ function FetchContent() {
             return <div className="loading-logo" ><img src={nasaLogo} alt="nasa-logo"/></div>
         }else {
             return (
+                
                 <div className="form">
                     <h1>Astronomy Picture of the Day</h1>
                     <div className="date-input">
                         <label>Select a date</label>
-                        <input type="date" id="date" onChange={dateHandle}/>
+                        <input type="date" value={items.date}id="date" onChange={dateHandle}/>
                     </div>
+                    <div >
+                        <DarkModeToggle onChange={setIsDarkMode}checked={isDarkMode}/>
+                    </div>    
                     <PictureItems items={items}/>     
                </div>
+            
             )
             }
         
