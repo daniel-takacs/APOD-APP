@@ -1,14 +1,13 @@
 import React from 'react'
 import '../App.css'
 
-function PictureItems({ items }) {
+function Content({ items }) {
    
     return (
-        <div className="pic-items">
-           
-            
+        <div className="content">
+            <h1>Astronomy Picture of the Day</h1>
             <div className="content-container">
-            {items.media_type === "video" ? (
+                {items.media_type === "video" ? (
                 <div className="iframe-container">
                     <iframe 
                         className="video" src={items.url} title="picture-of-the-day"
@@ -32,5 +31,4 @@ function PictureItems({ items }) {
     )
 }
 
-
-export default PictureItems
+export default Content
